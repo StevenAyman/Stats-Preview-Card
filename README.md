@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/responsive-stats-card-Z7BI9s_O24
+- Solution URL: https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/responsive-stats-card-Z7BI9s_O24
 - Live Site URL: https://stevenayman.github.io/Stats-Preview-Card/
 
 ## My process
