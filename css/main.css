@@ -1,0 +1,131 @@
+/* Global Rules Start */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: hsl(233, 47%, 7%);
+}
+/* Global Rules End */
+/* Main Section Start */
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: hsl(244, 38%, 16%);
+}
+main .image {
+    position: relative;
+    width: 470px;
+    height: 100%;
+}
+main .image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    background-color: hsl(277deg 57% 45% / 65%);
+}
+main .image img {
+    width: 100%;
+    height: 100%;
+}
+main .info {
+    width: 500px;
+    padding: 50px;
+}
+main .info h1 {
+    color: hsl(0, 0%, 100%);
+    line-height: 1.2;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+main .info h1 span {
+    color: hsl(277, 64%, 61%);
+}
+main .info .desc {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-right: 30px;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+main .info .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+main .info .stats .stat h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+}
+main .info .stats .stat span {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+@media (max-width: 991px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+        width: 330px;
+        margin-top: 20px;
+        border-radius: 12px;
+    }
+    main .image {
+        display: inline-block;
+        height: 40%;
+        width: 100%;
+    }
+    main .image::before {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    main .image img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    main .info {
+        width: auto;
+        padding: 30px;
+    }
+    main .info h1 {
+        font-size: 27px;
+    }
+    main .info .desc {
+        margin: 5px 5px 30px;
+    }
+    main .info .stats {
+        margin-right: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Main Section End */
+/* Footer Start */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+.attribution a {
+    color: hsl(277, 64%, 61%);
+}
+@media (max-width: 991px) {
+    .attribution {
+        position: relative;
+    }
+}
+/* Footer End */
