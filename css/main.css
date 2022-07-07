@@ -85,7 +85,6 @@ main .info .stats .stat span {
         text-align: center;
         width: 330px;
         margin-top: 20px;
-        border-radius: 12px;
     }
     main .image {
         display: inline-block;
@@ -95,10 +94,12 @@ main .info .stats .stat span {
     main .image::before {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
+        border-bottom-right-radius: 0;
     }
     main .image img {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
+        border-bottom-right-radius: 0;
     }
     main .info {
         width: auto;
